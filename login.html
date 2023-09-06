@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nmap Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #020202; /* Fundo preto */
+            background-color: #3d0444; /* Fundo preto */
             font-family: Arial, sans-serif;
         }
 
         .login-container {
             max-width: 400px;
             margin: 100px auto;
-            background-color: #dd02fa;
+            background-color: #3d0444;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
         }
 
         .logo {
@@ -26,12 +27,12 @@
         }
 
         .logo img {
-            width: 150px; /* Largura da logo */
+            width: 250px; /* Largura da logo */
             height: 150px; /* Altura da logo */
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 0px;
         }
 
         label {
@@ -41,7 +42,7 @@
         input[type="text"],
         input[type="password"] {
             width: 100%;
-            padding: 10px;
+            padding: 5px;
             border: 1px solid #d3d3d3;
             border-radius: 3px;
         }
@@ -50,7 +51,7 @@
             display: block;
             width: 100%;
             padding: 10px;
-            background-color: #007bff; /* Cor do botão */
+            background-color: #5d3172; /* Cor do botão */
             color: #fff;
             border: none;
             border-radius: 3px;
@@ -60,20 +61,23 @@
 </head>
 <body>
     <div class="login-container">
-        <div class="logo">
-            <img src="logoo.png" alt="Logo da empresa">
+        <div class="logo mb-5">
+            <img src="logo1.png" alt="Logo da empresa">
         </div>
         <form action="processar_login.php" method="post">
-            <div class="form-group">
-                <label for="username">Nome de Usuário:</label>
-                <input type="text" id="username" name="username" required>
+            <div class="mb-3">
+                <label style="color: #fff;" for="username" class="form-label">Nome de Usuário:</label>
+                <input type="text" class="form-control" id="username" name="username" required> 
+            
             </div>
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
+            <div class="mb-3">
+                <label style="color: #fff;" for="password">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password" required style="color: #fff;">
             </div>
             <button type="submit" class="btn-login">Entrar</button>
         </form>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
